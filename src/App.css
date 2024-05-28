@@ -6,11 +6,14 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
 .bg-purple{
     background: #8e00a3;
 }
+.container{
+    max-width: 90%;
+}
 .header-wrapper .top-strip p{
     color: #ffffff;
 }
 .header-wrapper .top-strip {
-    padding: 6px 0px;
+    padding: 10px 0px;
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
@@ -23,8 +26,9 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
 .logo-wrapper {
     width: 100%;
     /* max-width: 200px; */
-    height: 50%;
-
+    height: auto;
+    align-items: center;
+    justify-content: center;
 }
 .logo{
     width: 100%;
@@ -59,25 +63,29 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
 .header_search {
     width: 60%;
     background-color: #eeebeb;
-    height: 55px;
+    height: 50px;
     position: relative !important;
     border-radius: 5px;
     padding: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header_search input{
     background: transparent !important;
     width: 100%;
-    height: 40px;
+    height: 30px;
     border: none;
     outline: none;
-    padding: 0px 20px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
     font-weight: 300;
+}
+.header_search input::-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.4);
 }
 .header_search button{
     position: absolute;
     right: 15px;
-    top: 7px;
+    top: 4px;
     height: 40px !important;
     width: 40px !important;
     border-radius: 50% !important;
@@ -89,4 +97,39 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
 .header_search button svg{
     color: black;
     font-size: 25px;
+}
+.part3 .circle{
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 45px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    font-size: 22px;
+    color: rgb(69, 66, 66);
+    font-weight: 50;
+}
+.cart_button button{
+    background-color: #fff6ee;
+}
+.cart_button .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+}
+.cart_button button svg {
+    color: rgb(246, 160, 75);
+}
+.cart_button .count {
+    display: flex;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: rgb(246, 160, 75);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
