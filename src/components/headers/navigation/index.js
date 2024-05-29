@@ -18,7 +18,7 @@ const Navigations = () => {
                             </Button>
                         </div>
                         <div className="col-sm-9 navpart2 d-flex">
-                            <ul className='list list-inline'>
+                            <ul className='list list-inline ml-auto'>
                                 <li className='list-inline-item'><Link to='/'>Home</Link></li>
                                 <li className='list-inline-item'><Link to='/'>Fashion</Link></li>
                                 <li className='list-inline-item'><Link to='/'>Electronic</Link></li>
