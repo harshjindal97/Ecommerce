@@ -3,8 +3,9 @@ import { Link} from 'react-router-dom'
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import CountaryDropdown from "../countaryDropdown";
 import Button from '@mui/material/Button';
-import { IoIosSearch } from "react-icons/io";
 import { LuUser2 } from "react-icons/lu";
+import SearchBox from "./searchbox";
+import Navigations from "./navigation";
 const Header =()=>{
     
     return(
@@ -23,10 +24,7 @@ const Header =()=>{
                             </div>
                             <div className="col-sm-9 d-flex align-items-center part2">
                                 <CountaryDropdown/>
-                                <div className="header_search ml-3 mr-3">
-                                    <input type="text" placeholder="Search for products"/>
-                                    <Button><IoIosSearch /></Button>
-                                </div>
+                                <SearchBox/>
                                 <div className="d-flex align-items-center part3 ml-auto">
                                     <Button className="circle mr-3"><LuUser2 /></Button>
                                     <div className="d-flex align-items-center ml-auto cart_button">
@@ -41,6 +39,7 @@ const Header =()=>{
                         </div>
                     </div>
                 </div>
+                <Navigations/>
             </div>
         </>
     )
