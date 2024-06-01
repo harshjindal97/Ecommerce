@@ -6,8 +6,12 @@ import Button from '@mui/material/Button';
 import { LuUser2 } from "react-icons/lu";
 import SearchBox from "./searchbox";
 import Navigations from "./navigation";
+import { useContext } from "react";
+import { MyContext } from "../../App";
+
+
 const Header =()=>{
-    
+    const context = useContext(MyContext);
     return(
         <>
             <div className="header-wrapper">
@@ -23,7 +27,8 @@ const Header =()=>{
                                 <Link  to={'/'} ><img className="logo" src={logo} alt="" /></Link>
                             </div>
                             <div className="col-sm-9 d-flex align-items-center part2">
-                                <CountaryDropdown/>
+                                {context.countryList?.lenght!==0 && <CountaryDropdown/>}
+                                {/* <CountaryDropdown/> */}
                                 <SearchBox/>
                                 <div className="d-flex align-items-center part3 ml-auto">
                                     <Button className="circle mr-3"><LuUser2 /></Button>

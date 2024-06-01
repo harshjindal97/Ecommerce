@@ -20,12 +20,12 @@ const Navigations = () => {
                         <div className="col-sm-9 navpart2 d-flex">
                             <ul className='list list-inline ml-auto'>
                                 <li className='list-inline-item'><Link to='/'>Home</Link></li>
-                                <li className='list-inline-item'><Link to='/'>Fashion</Link></li>
-                                <li className='list-inline-item'><Link to='/'>Electronic</Link></li>
-                                <li className='list-inline-item'><Link to='/'>Bakery</Link></li>
-                                <li className='list-inline-item'><Link to='/'>Grocery</Link></li>
-                                <li className='list-inline-item'><Link to='/'>Blog</Link></li>
-                                <li className='list-inline-item'><Link to='/'>About us</Link></li>
+                                <li className='list-inline-item'><Link to='/fashion'>Fashion</Link></li>
+                                <li className='list-inline-item'><Link to='/electronic'>Electronic</Link></li>
+                                <li className='list-inline-item'><Link to='/bakery'>Bakery</Link></li>
+                                <li className='list-inline-item'><Link to='/Grocery'>Grocery</Link></li>
+                                <li className='list-inline-item'><Link to='/Blog'>Blog</Link></li>
+                                <li className='list-inline-item'><Link to='/About'>About us</Link></li>
                             </ul>
                         </div>
                     </div>
