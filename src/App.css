@@ -10,8 +10,8 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
     max-width: 90%;
 }
 .header-wrapper{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* padding-bottom: 10px; */
 }
 .header-wrapper .top-strip p{
     color: #ffffff;
@@ -179,17 +179,39 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
     justify-content: center;
 }
 nav .navpart1{
+    width: 100%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
 }
 nav .allcat {
-    padding: 8px 20px;
+    padding: 12px 25px;
     background: #b54bc5;
     color: white;
     border-radius: 30px;
 }
 nav .allcat:hover{
     background: #b54bc5;
+}
+.catWrapper {position: relative;}
+
+.sidebarNav{
+    position: absolute;
+    top: 112%;
+    width: 100%;
+    left: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 0px;
+}
+.sidebarNav ul li{
+    list-style: none;
+    width: 100%;
+    padding: 0px 15px;
+}
+.sidebarNav ul li button{
+    color: #000;
+    justify-content: flex-start;
+    text-transform: capitalize;
 }
 .texts{
     font-weight: 600 !important;
@@ -216,11 +238,49 @@ nav .allcat .icon2 svg{
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    margin-bottom:10px ;
     transition: 0.2s ease-in-out;
-    border-radius: 25px;
+    border-radius: 18px;
 
 }
 .navpart2 ul li a:hover{
     color: #b54bc5;
     background:#e9cfed;
+}
+.navpart2 ul li{
+    position: relative;
+
+}
+.navpart2 ul li .submenu{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    min-width: 200px;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+}
+.navpart2 ul li:hover .submenu{
+    visibility: inherit;
+    opacity: 1;
+    top: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.navpart2 ul li .submenu a{
+    display: block;
+    width: 100%;
+    border-radius: 0px;
+    padding: 8px;
+    margin-bottom: 0px;
+}
+.navpart2 ul li .submenu a:hover{
+    background-color: #d1d0d0;
+}
+.navpart2 ul li .submenu a button{
+    color: #000;
+    width: 100%;
+    border-radius: 0px;
+    justify-content: flex-start !important;
+    text-transform: capitalize;
 }
