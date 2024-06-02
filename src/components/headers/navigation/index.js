@@ -3,8 +3,12 @@ import Button from '@mui/material/Button';
 import { IoIosMenu } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 const Navigations = () => {
+
+    const [isOpenNav , setIsOpenNav] = useState(false);
+
     return (
         <>
             <nav>
@@ -12,12 +16,12 @@ const Navigations = () => {
                     <div className="row">
                         <div className="col-sm-3 navpart1 d-flex">
                             <div className='catWrapper'>
-                                <Button className="allcat">
+                                <Button className="allcat" onClick={()=>setIsOpenNav(!isOpenNav)}>
                                     <span className='icon1 mr-2'><IoIosMenu /></span>
                                     <span className="texts">All Catogries</span>
                                     <span className='icon2 ml-2'><FaAngleDown /></span>
                                 </Button>
-                                <div className='sidebarNav shadow'>
+                                <div className={`sidebarNav shadow ${isOpenNav==true ? 'open' : ''}`} >
                                     <ul>
                                         <li><Link to='/men'><Button>Home</Button></Link></li>
                                         <li><Link to='/men'><Button>Men</Button></Link></li>

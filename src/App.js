@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Header from './components/headers';
-// import Home from './pages/home';
+import Home from './pages/home';
 import axios from 'axios';
 import { createContext, useEffect, useState } from 'react';
 
@@ -15,7 +15,7 @@ function App() {
     getCountry('https://countriesnow.space/api/v0.1/countries/');
   },[])
   const getCountry=async (url)=>{
-    const responsive = await axios.get(url).then((res)=>{
+     await axios.get(url).then((res)=>{
       setCountryList(res.data.data);
       // console.log(res.data.data);
     });
@@ -29,7 +29,7 @@ function App() {
         <MyContext.Provider value={values} >
           <Header />
           <Routes>
-            {/* <Route path='/' exact={true} element={<Home/>} /> */}
+            <Route path='/' exact={true} element={<Home/>} />
           </Routes>
         </MyContext.Provider>
       </BrowserRouter>

@@ -1,7 +1,14 @@
-const Home =()=>{
-    return(
+import HomeBanner from "../../components/homebanner";
+
+
+
+const Home = () => {
+    
+    
+
+    return (
         <>
-            <h1>Home Page</h1>
+            <HomeBanner/>
         </>
     )
 };

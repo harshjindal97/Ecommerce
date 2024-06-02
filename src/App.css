@@ -1,13 +1,14 @@
 *{margin: 0px ;padding: 0px}
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
 body{font-family: "Lato", sans-serif;font-size: 14px;}
 
 .bg-purple{
     background: #8e00a3;
 }
 .container{
-    max-width: 90%;
+    max-width:95%;
 }
 .header-wrapper{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -182,7 +183,7 @@ nav .navpart1{
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 nav .allcat {
     padding: 12px 25px;
@@ -202,16 +203,30 @@ nav .allcat:hover{
     left: 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px 0px;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+    visibility: hidden;
+    background: white;
+}
+ .open{
+    opacity: 1;
+    visibility: inherit;
+    z-index: 100;
 }
 .sidebarNav ul li{
     list-style: none;
     width: 100%;
-    padding: 0px 15px;
 }
 .sidebarNav ul li button{
     color: #000;
     justify-content: flex-start;
     text-transform: capitalize;
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 0px;
+}
+.sidebarNav ul li button:hover{
+    background: #e2e2e2;
 }
 .texts{
     font-weight: 600 !important;
@@ -265,6 +280,7 @@ nav .allcat .icon2 svg{
     opacity: 1;
     top: 100%;
     transition: all 0.4s ease-in-out;
+    z-index: 100;
 }
 
 .navpart2 ul li .submenu a{
@@ -283,4 +299,39 @@ nav .allcat .icon2 svg{
     border-radius: 0px;
     justify-content: flex-start !important;
     text-transform: capitalize;
+}
+.homebanner{
+    position: relative;
+    overflow: hidden;
+    
+}
+.homebanner *{
+    outline: none;
+}
+.homebanner .slick-arrow{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 15px;
+    color: black;
+    background-color: rgb(4, 4, 4);
+    /* position: absolute; */
+}
+.homebanner .slick-next{
+    display: flex;
+    background: transparent;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    height: 300px;
+    width: 30px;
+}
+.homebanner .slick-prev{
+    display: flex !important;
+    background: transparent;
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    height: 300px;
+    z-index: 100;
 }

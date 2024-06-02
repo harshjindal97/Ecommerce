@@ -18,7 +18,7 @@ const CountaryDropdown = () => {
 
     const filterList =(e)=>{
         const keyword = e.target.value.toLowerCase();
-        if(keyword==''){
+        if(keyword===''){
             setCountaryList(context.countryList);
         }else{
             const list = countaryList.filter((items)=>{
@@ -32,7 +32,7 @@ const CountaryDropdown = () => {
     }
 
     const onClickfunc=()=>{
-        if(isOpenModal==true) {
+        if(isOpenModal===true) {
             setisOpenModal(false);
         }else{
             setisOpenModal(true);
@@ -49,7 +49,7 @@ const CountaryDropdown = () => {
 
     return (
         <>
-            <Button className="countaryDrop" onClick={onClickfunc}>
+            <Button className="countaryDrop shadow" onClick={onClickfunc}>
                 <div className="info d-flex flex-column">
                     <span className='lable'>Your Location</span>
                     <span className='name'>{selectedCountry}</span>
@@ -68,7 +68,7 @@ const CountaryDropdown = () => {
                     {countaryList?.length!==0 && countaryList?.map((item , index)=>{
                         return(
                             <li key={index}><Button onClick={()=>selectCountry(index , item.country)} 
-                            className={`${selectTab==index ? 'active' : '' }`}>{item.country}</Button></li>
+                            className={`${selectTab===index ? 'active' : '' }`}>{item.country}</Button></li>
                             )
                         })
                     }
