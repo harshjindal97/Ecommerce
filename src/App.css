@@ -10,6 +10,10 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
 .container{
     max-width:95%;
 }
+.text-light{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5) !important;
+}
 .header-wrapper{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     /* padding-bottom: 10px; */
@@ -374,4 +378,43 @@ nav .allcat .icon2 svg{
 .homeProducts .banner img{
     object-fit: fill;
     border-radius: 10px;
+}
+.productRow{
+    align-items: center;
+}
+.productRow .hd{
+    font-size: 25px;
+    font-weight: 600;
+}
+.productRow .info{
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.productRow .info p{
+    margin-bottom: 0px;
+}
+.productRow Button{
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
+    padding: 8px 14px;
+    border-radius: 30px;
+}
+
+.productRow Button:hover{
+    background-color: #eeecec;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.product_row .productItems{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.product_row .productItems .img_wrapper img{
+    position: relative;
+}
+.product_row .slick-track{
 }
