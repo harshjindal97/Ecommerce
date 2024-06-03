@@ -183,7 +183,7 @@ nav .navpart1{
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 nav .allcat {
     padding: 12px 25px;
@@ -198,7 +198,7 @@ nav .allcat:hover{
 
 .sidebarNav{
     position: absolute;
-    top: 112%;
+    top: 120%;
     width: 100%;
     left: 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -208,6 +208,7 @@ nav .allcat:hover{
     visibility: hidden;
     background: white;
 }
+
  .open{
     opacity: 1;
     visibility: inherit;
@@ -224,10 +225,36 @@ nav .allcat:hover{
     width: 100%;
     padding: 5px 15px;
     border-radius: 0px;
+    font-size: 16px;
 }
+.sidebarNav ul li button svg{font-size: 12px;opacity: 0.6;}
 .sidebarNav ul li button:hover{
     background: #e2e2e2;
 }
+.sidebarNav ul li{position: static;}
+.sidebarNav ul li .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    padding: 15px 0px;
+}
+.sidebarNav ul li:hover .submenu{
+    opacity: 1;
+    visibility: inherit;
+}
+.sidebarNav .submenu a button{
+    width: 100%;
+    text-transform: capitalize;
+    padding: 5px 15px;
+}
+
 .texts{
     font-weight: 600 !important;
 }
@@ -334,4 +361,17 @@ nav .allcat .icon2 svg{
     left: 0px;
     height: 300px;
     z-index: 100;
+}
+.homeProducts{
+    padding: 25px 0px;
+    width: 100%;
+}
+.homeProducts .banner{
+    width: 100%;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+.homeProducts .banner img{
+    object-fit: fill;
+    border-radius: 10px;
 }
