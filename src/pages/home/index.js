@@ -5,6 +5,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
+import ProductItem from "../../components/productItem/productItem";
+
+
 
 const Home = () => {
     var settings = {
@@ -36,61 +39,16 @@ const Home = () => {
                             <div className="product_row">
                                 <Swiper
                                     slidesPerView={4}
-                                    spaceBetween={30}
+                                    spaceBetween={0}
                                     pagination={{
                                         clickable: true,
                                     }}
                                     modules={[Navigation]}
                                     className="mySwiper"
                                 >
+
                                     <SwiperSlide>
-                                        <div className="productItems d-flex">
-                                            <div className="img_wrapper">
-                                                <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="productItems d-flex">
-                                            <div className="img_wrapper">
-                                                <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="productItems d-flex">
-                                            <div className="img_wrapper">
-                                                <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="productItems d-flex">
-                                            <div className="img_wrapper">
-                                                <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="productItems d-flex">
-                                            <div className="img_wrapper">
-                                                <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="productItems d-flex">
-                                            <div className="img_wrapper">
-                                                <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="productItems d-flex">
-                                            <div className="img_wrapper">
-                                                <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
-                                            </div>
-                                        </div>
+                                        <ProductItem/>
                                     </SwiperSlide>
                                 </Swiper>
                             </div>
