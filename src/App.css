@@ -10,6 +10,9 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
 .container{
     max-width:95%;
 }
+.cursor{
+    cursor: pointer;
+}
 .text-light{
     font-size: 12px;
     color: rgba(0, 0, 0, 0.5) !important;
@@ -375,19 +378,23 @@ nav .allcat .icon2 svg{
     border-radius: 10px;
     /* overflow: hidden; */
 }
+
 .homeProducts .banner img{
-    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 .productRow{
     align-items: center;
 }
-.productRow .hd{
-    font-size: 25px;
-    font-weight: 600;
+.hd{
+    font-size: 20px;
+    font-weight: 510;
+    text-transform: uppercase;
 }
 .productRow .info{
-    padding: 8px 15px;
+    padding: 8px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -456,10 +463,11 @@ nav .allcat .icon2 svg{
     flex-direction: column;
     position: absolute;
     top: 10px;
-    right: -100%;
+    right: -10px;
     gap: 10px;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
 }
 .productItems .action button svg{
     color: #000;
@@ -472,7 +480,42 @@ nav .allcat .icon2 svg{
 .productItems .action button:hover{
     background: rgb(53, 145, 243);    
 }
-.productItems:hover .action{
+.productItems .abc:hover .action{
     right: 10px;
     opacity: 1;
+    visibility: inherit;
+}
+.productItems .img_wrapper:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.homecat .items img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.homecat .items{
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.swiper-button-next{
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-size: 10px !important;
+    top: 48% !important;
+    right: 0px !important;
+}
+.swiper-button-prev{
+    color: rgba(0, 0, 0, 0.5) !important;
+    top: 48% !important;
+    left: -5px !important;
+    font-size: 1px !important;
+
+}
+.homecat .swiper{
+    overflow: inherit !important;;
+}
+.items h6{
+    display: flex;
+    justify-content: center;
 }

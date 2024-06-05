@@ -8,12 +8,13 @@ const ProductItem = () => {
         <div className="productItems p-1">
             <div className="img_wrapper abc">
                 <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
+                <span className="badge">20%</span>
+                <div className="action">
+                    <Button><MdZoomOutMap /></Button>
+                    <Button ><FaRegHeart /></Button>
+                </div>
             </div>
-            <span className="badge">20%</span>
-            <div className="action">
-                <Button><MdZoomOutMap /></Button>
-                <Button ><FaRegHeart /></Button>
-            </div>
+
             <hr />
             <div className="info">
                 <h5 className="heading">All Natural Italian-Style Chicken Meatballs</h5>

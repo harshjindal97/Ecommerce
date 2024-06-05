@@ -13,16 +13,10 @@ const HomeBanner = () => {
         <div className="homebanner">
             <Slider {...settings}>
                 <div className="item">
-                    <img className="w-100" src="https://sslimages.shoppersstop.com/sys-master/root/h99/h09/32787629309982/luxe-sunglasses-web600--2024-05-29-new-hpmepage.jpg" alt=""></img>
+                    <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-image-6.jpg" alt=""></img>
                 </div>
                 <div className="item">
-                    <img className="w-100" src="https://sslimages.shoppersstop.com/sys-master/root/hae/hdd/32767795691550/Static-Web-Stop-Life_202u--.jpg" alt=""></img>
-                </div>
-                <div className="item">
-                    <img className="w-100" src="https://sslimages.shoppersstop.com/sys-master/root/hbd/he3/32767795822622/Static-Web-And-Forever-New_29--jn.jpg" alt=""></img>
-                </div>
-                <div className="item">
-                    <img className="w-100" src="https://sslimages.shoppersstop.com/sys-master/root/h07/hca/32767796150302/Static-Web-titan%2C-casio_4793-wj.jpg" alt=""></img>
+                    <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-image-7.jpg" alt=""></img>
                 </div>
             </Slider>
 
