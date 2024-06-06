@@ -9,6 +9,7 @@ import { Navigation } from 'swiper/modules';
 import ProductItem from "../../components/productItem/productItem";
 import Homecat from "../../components/Homecat";
 import { CiMail } from "react-icons/ci";
+import ProductModal from "../../components/productModal";
 
 
 const Home = () => {
@@ -23,7 +24,6 @@ const Home = () => {
         <>
             <HomeBanner />
             <Homecat />
-
 
             <div className="homeProducts">
                 <div className="container">

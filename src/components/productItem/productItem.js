@@ -2,15 +2,26 @@ import Rating from '@mui/material/Rating';
 import { MdZoomOutMap } from "react-icons/md";
 import Button from '@mui/material/Button';
 import { FaRegHeart } from "react-icons/fa";
+import ProductModal from '../productModal';
+import { useState } from 'react';
 
 const ProductItem = () => {
+    const [isOpenproduct , setisOpenProduct] = useState(false);
+    const viewProduct =(id)=>{
+        setisOpenProduct(true);
+    }
+    const onCloseProductModal=()=>{
+        setisOpenProduct(false);
+    }
+
     return (
+        <>
         <div className="productItems p-1">
             <div className="img_wrapper abc">
                 <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
                 <span className="badge">20%</span>
                 <div className="action">
-                    <Button><MdZoomOutMap /></Button>
+                    <Button onClick={()=>viewProduct(1)}><MdZoomOutMap /></Button>
                     <Button ><FaRegHeart /></Button>
                 </div>
             </div>
@@ -26,6 +37,9 @@ const ProductItem = () => {
                 </div>
             </div>
         </div>
+        {isOpenproduct && <ProductModal onCloseProductModal  = {onCloseProductModal}/>}
+        {/* <ProductModal/> */}
+        </>
     )
 }
 export default ProductItem;
