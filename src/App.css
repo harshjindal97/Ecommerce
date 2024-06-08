@@ -9,7 +9,7 @@ button{text-transform: capitalize;}
     background: #8e00a3;
 }
 .container{
-    max-width:95%;
+    max-width:85%;
 }
 .cursor{
     cursor: pointer;
@@ -617,10 +617,11 @@ nav .allcat .icon2 svg{
 footer{
     width: 100%;
     height: auto;
-    background: #f4f4f4;
+    /* background: #f4f4f4; */
     margin: auto;
-    padding: 25px;
+    /* padding: 25px; */
 }
+.footercolor{background: #f4f4f4;}
 .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.2); padding-bottom: 20px;}
 footer .topInfo .col{
     align-items: center;
@@ -631,13 +632,14 @@ footer .topInfo .col:last-child{border-right: none;}
 footer .topInfo .col span{font-size: 14px;font-weight: 600;}
 .topInfo .col svg{font-size: 22px;margin-right: 5px;}
 .linkWrap{padding-bottom: 60px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
 }
 .linkWrap .col{padding-left: 40px;}
 .linkWrap h3{font-size: 15px;margin-bottom: 20px;font-weight: 600;}
 .linkWrap ul li{list-style: none;}
 .linkWrap ul li a{color: #686666;font-size: 12px;}
 .linkWrap ul li a:hover{text-decoration: none;}
+footer .contact{padding: 20px 0px;}
 footer .contact p{color: #a09e9e; font-size: 12px;}
 footer .contact .col-md-6 a{color: #a09e9e;}
 footer .contact .col-md-6 svg{font-size: 25px;}
@@ -708,3 +710,100 @@ footer .contact .col-md-6{
 .comparebutton svg{color: #686666; font-size: 15px;}
 .addbutton:hover{background: white !important;}
 .comparebutton:hover{background: white !important;}
+
+.productListingPage .productListing{ gap: 20px;}
+.productListingPage .productListing .sidebar {
+    width: 25%;
+    flex: 0 0 25%;
+}
+.productListingPage .productListing .contentRight{
+    width: 75%;
+    flex: 0 0 75%;
+}
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    user-select: none;
+}
+
+/* Hide the default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.sidebar{padding: 35px 0px;position: relative;}
+.filterBox .scroll{padding-left: 10px; max-height: 300px; overflow-y: scroll; overflow-x: hidden;}
+.productListingPage .productListing .sidebar .filterBox .scroll::-webkit-scrollbar {width: 5px;}
+.productListingPage .productListing .sidebar .filterBox .scroll::-webkit-scrollbar-thumb {background: #ababab;border-radius: 10px;}
+
+.filterBox .scroll ul li{
+    list-style: none;
+    margin-bottom: 2px !important;
+    width: 100%;
+}
+.css-i4bv87-MuiSvgIcon-root{
+    width: 20px !important;
+    height: 20px !important;
+}
+.css-ahj2mt-MuiTypography-root{font-size: 15px !important;}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
+    padding: 2px !important;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked{color: #b54bc5 !important;}
+.sidebar .filterBox h6{font-weight: 520 !important;  font-size: 15px;}
+.range-slider__thumb{background: black !important; width: 10px !important; height: 10px !important;}
+.range-slider__range{background: black !important;}
+.range-slider{
+    height: 5px !important;
+}
+.sidebar .bann{
+    position: sticky !important;
+    top: 10px !important;
+    right: 0px;
+}

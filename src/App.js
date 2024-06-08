@@ -7,6 +7,7 @@ import axios from 'axios';
 import { createContext, useEffect, useState } from 'react';
 import Footer from './components/footer';
 import ProductModal from './components/productModal';
+import Listing from './pages/Listing/Listing';
 
 const MyContext = createContext();
 
@@ -36,6 +37,7 @@ function App() {
           <Header />
           <Routes>
             <Route path='/' exact={true} element={<Home/>} />
+            <Route path='/cat/:id' exact={true} element={<Listing/>} />
           </Routes>
           <Footer/>
           {isOpenproduct && <ProductModal />}
