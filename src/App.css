@@ -1,9 +1,10 @@
 *{margin: 0px ;padding: 0px}
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
 body{font-family: "Lato", sans-serif;font-size: 14px;}
-
+button{text-transform: capitalize;}
 .bg-purple{
     background: #8e00a3;
 }
@@ -12,6 +13,16 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
 }
 .cursor{
     cursor: pointer;
+}
+.btnblue{
+    padding: 7px 28px !important;
+    color: rgb(213, 228, 239) !important;
+    background: rgb(39, 105, 226) !important;
+    border-radius: 40px !important;
+}
+.btnblue:hover{
+    color: white !important;
+    background-color: rgb(50, 103, 202) !important;
 }
 .text-light{
     font-size: 12px;
@@ -49,14 +60,15 @@ body{font-family: "Lato", sans-serif;font-size: 14px;}
 }
 .header-wrapper .header .part2 .countaryDrop {
     height: auto;
-    width: 150px;
+    width: 20%;
     min-width: 150px;
     text-align: left !important;
     justify-content: space-between;
     color: #000;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 7px;
-    padding: 10px;
+    padding: 1px 10px;
+    background: #ebeaea;
 }
 .header-wrapper .header .part2 .countaryDrop .lable {
     font-size: 12px !important;
@@ -393,13 +405,13 @@ nav .allcat .icon2 svg{
     font-weight: 510;
     text-transform: uppercase;
 }
-.productRow .info{
+.info{
     padding: 8px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.productRow .info p{
+.info p{
     margin-bottom: 0px;
 }
 .productRow Button{
@@ -428,26 +440,37 @@ nav .allcat .icon2 svg{
     font-weight: 600;
     margin-bottom: 0px !important;
 }
-.product_row .productItems .info .price .oldPrice{
+.info .price .oldPrice{
     font-size: 16px;
     text-decoration: line-through;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.5);
 }
-.product_row .productItems .info .price .newPrice{
+.info .price .newPrice{
     font-size: 16px;
     font-weight: bold;
 }
 .productItems{
     position: relative;
 }
-.product_row .badge{
+.badge{
     position: absolute;
     padding: 4px 7px;
     top: 10px;
     left: 10px;
     color: white;
     background: rgb(53, 145, 243);
+}
+.badges{
+    position: absolute;
+    padding: 4px 10px;
+    top: 5%;
+    left: 5%;
+    color: white;
+    background: rgb(53, 145, 243);
+    z-index: 100;
+    border-radius: 10px;
+    font-size: 10px;
 }
 .productItems .action button{
     align-items: center;
@@ -622,16 +645,66 @@ footer .contact .col-md-6{
     justify-content: space-between;
 }
 .productModal .MuiPaper-elevation{
-    padding: 25px;
+    padding: 25px 25px;
     position: relative;
     max-width: 1000px !important;
-    width: 850px !important;
+    width: 950px !important;
+}
+.innerImage{
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    border-radius: 12px !important;
 }
 .productModal h4{
     font-size: 20px !important;
 }
-.productModal .productModalimage img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+.productModal .slick_cloned {
+    overflow: hidden !important;
 }
+.productModal .slick-slide{
+    overflow: hidden !important;
+}
+.productModalSlider .slick-prev{
+    left: 0px !important;
+    top: 50% !important;
+    z-index: 100;
+}
+.productModalSlider .slick-next{
+    right: 10px !important;
+    top: 50% !important;
+    z-index: 100;
+}
+
+.slick-arrow::before{
+    font-size: 30px;
+    color: #706f6f;
+}
+.iiz__hint{
+    display: none;
+}
+.instock{
+    background: rgb(194, 243, 178);
+    color: rgb(41, 188, 41);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.quantitydrop{width: 150px;gap: 20px;}
+.quantitydrop button{
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#e7e3e3;
+}
+.quantitydrop button svg{color: #000;}
+.quantitydrop input{
+    width: 30px;
+    border: none;outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+.addbutton{border-radius: 30px !important; font-size: 10px !important; border: 1px solid rgba(0, 0, 0, 0.5) !important; color: #686666 !important;}
+.addbutton svg{color:#686666; font-size: 15px;}
+.comparebutton{color: #686666 !important; font-size: 11px !important;}
+.comparebutton svg{color: #686666; font-size: 15px;}
+.addbutton:hover{background: white !important;}
+.comparebutton:hover{background: white !important;}

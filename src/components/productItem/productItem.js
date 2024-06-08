@@ -3,15 +3,16 @@ import { MdZoomOutMap } from "react-icons/md";
 import Button from '@mui/material/Button';
 import { FaRegHeart } from "react-icons/fa";
 import ProductModal from '../productModal';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { MyContext } from '../../App';
 
 const ProductItem = () => {
-    const [isOpenproduct , setisOpenProduct] = useState(false);
+
+    const context = useContext(MyContext);
+
+
     const viewProduct =(id)=>{
-        setisOpenProduct(true);
-    }
-    const onCloseProductModal=()=>{
-        setisOpenProduct(false);
+        context.setisOpenProduct(true);
     }
 
     return (
@@ -37,7 +38,7 @@ const ProductItem = () => {
                 </div>
             </div>
         </div>
-        {isOpenproduct && <ProductModal onCloseProductModal  = {onCloseProductModal}/>}
+        {/* {isOpenproduct && <ProductModal onCloseProductModal  = {onCloseProductModal}/>} */}
         {/* <ProductModal/> */}
         </>
     )
