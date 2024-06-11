@@ -6,7 +6,7 @@ import ProductModal from '../productModal';
 import { useContext, useState } from 'react';
 import { MyContext } from '../../App';
 
-const ProductItem = () => {
+const ProductItem = (props) => {
 
     const context = useContext(MyContext);
 
@@ -17,7 +17,7 @@ const ProductItem = () => {
 
     return (
         <>
-        <div className="productItems p-1">
+        <div className={`productItems p-1 ${props.itemView}`}>
             <div className="img_wrapper abc">
                 <img className="w-100" src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" alt=""></img>
                 <span className="badge">20%</span>

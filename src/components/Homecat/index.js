@@ -6,7 +6,7 @@ import { Navigation } from 'swiper/modules';
 
 const Homecat = () => {
     return (
-        <div className="homecat mt-3">
+        <div className="homecat mt-3 mb-3">
             <div className="container">
             <h3 className="mb-3 hd">Featured Catagories</h3>
                 <Swiper
