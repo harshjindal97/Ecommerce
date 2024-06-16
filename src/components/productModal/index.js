@@ -9,12 +9,10 @@ import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import { CiHeart } from "react-icons/ci";
 import { HiArrowsUpDown } from "react-icons/hi2";
-
-
-
-
 import QuantityBox from '../quantityBox/QuantityBox';
 import { MyContext } from '../../App';
+import { Zoom } from '@mui/material';
+import Zoomin from '../productZoom/Zoom';
 
 const ProductModal = (props) => {
     const context = useContext(MyContext);
@@ -45,19 +43,9 @@ const ProductModal = (props) => {
             <div className='row mt-2'>
                 <div className='col-md-5'>
                 <span className="badges">20%</span>
-                    <div className='productModalSlider p-4'>
+                    <div className='productModalSlider'>
+                        <Zoomin/>
                         
-                        <Slider className='productModalimage' {...settings}>
-                            <div>
-                                <InnerImageZoom className='innerImage' src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62.jpg" zoomSrc="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62.jpg" zoomType='hover' zoomScale={1} />
-                            </div>
-                            <div>
-                                <InnerImageZoom className='innerImage' src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image2-47.jpg' zoomSrc="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image2-47.jpg" zoomType='hover' zoomScale={1} ></InnerImageZoom>
-                            </div>
-                            <div>
-                                <InnerImageZoom className='innerImage' src='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image3-35.jpg' zoomSrc='https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image3-35.jpg' zoomType='hover' zoomScale={1} ></InnerImageZoom>
-                            </div>
-                        </Slider>
                     </div>
                 </div>
                 <div className='col-md-7 p-4'>

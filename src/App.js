@@ -8,6 +8,7 @@ import { createContext, useEffect, useState } from 'react';
 import Footer from './components/footer';
 import ProductModal from './components/productModal';
 import Listing from './pages/Listing/Listing';
+import ProductDetail from './pages/productDetails/ProdectDetail';
 
 const MyContext = createContext();
 
@@ -38,6 +39,7 @@ function App() {
           <Routes>
             <Route path='/' exact={true} element={<Home/>} />
             <Route path='/cat/:id' exact={true} element={<Listing/>} />
+            <Route path='/product/:id' exact={true} element={<ProductDetail/>} />
           </Routes>
           <Footer/>
           {isOpenproduct && <ProductModal />}
