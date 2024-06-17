@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
+import strawberry from '../../assets/images/strawberry.png'
 
 const Homecat = () => {
     return (
@@ -20,91 +21,133 @@ const Homecat = () => {
 
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="items">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg" alt=""></img>
+                            <img src={strawberry} alt=""></img>
+                        <h6>Red Apple</h6>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="items">
+                            <img src={strawberry} alt=""></img>
+                        <h6>Red Apple</h6>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="items">
+                            <img src={strawberry} alt=""></img>
+                        <h6>Red Apple</h6>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="items">
+                            <img src={strawberry} alt=""></img>
+                        <h6>Red Apple</h6>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="items">
+                            <img src={strawberry} alt=""></img>
+                        <h6>Red Apple</h6>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="items">
+                            <img src={strawberry} alt=""></img>
+                        <h6>Red Apple</h6>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="items">
+                            <img src={strawberry} alt=""></img>
+                        <h6>Red Apple</h6>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="items">
+                            <img src={strawberry} alt=""></img>
                         <h6>Red Apple</h6>
                         </div>
                     </SwiperSlide>

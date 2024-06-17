@@ -522,8 +522,9 @@ nav .allcat .icon2 svg{
 }
 .homecat .items{
     padding: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+    background: rgb(243, 227, 217);
 }
 .swiper-button-next{
     position: absolute;
